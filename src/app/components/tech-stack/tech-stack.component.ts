@@ -41,7 +41,8 @@ export class TechStackComponent {
       skills: [
         { name: 'Git', icon: 'git' },
         { name: 'GitHub', icon: 'github' },
-        { name: 'AWS', icon: 'amazonwebservices' }
+        { name: 'AWS', icon: 'amazonwebservices' },
+        { name: 'Node.js', icon: 'nodejs' }
       ]
     },
     {
