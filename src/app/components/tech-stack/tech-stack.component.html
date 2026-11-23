@@ -1,0 +1,20 @@
+<section id="tech" class="chapter tech-chapter" aria-labelledby="tech-title">
+  <div class="chapter-inner">
+    <h2 id="tech-title">{{ language === 'es' ? 'Tecnologías' : 'Technologies' }}</h2>
+    <div class="tech-grid">
+      @for (group of groups; track group.id) {
+        <article class="tech-card">
+          <h3>{{ group.title[language] }}</h3>
+          <ul class="skill-list" role="list">
+            @for (skill of group.skills; track skill.icon) {
+              <li>
+                <img [src]="'tech-icons/' + skill.icon + '.svg'" [class.icon-invert]="skill.icon === 'github'" alt="" width="28" height="28">
+                {{ (language === 'en' && skill.englishName) || skill.name }}
+              </li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+  </div>
+</section>

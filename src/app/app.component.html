@@ -1,0 +1,10 @@
+<app-navbar [language]="language()" (languageChange)="setLanguage($event)" />
+<main id="main-content">
+  <div class="opening-panel">
+    <app-hero [language]="language()" />
+  </div>
+  <app-tech-stack [language]="language()" />
+  <app-projects [language]="language()" />
+  <app-contact [language]="language()" />
+</main>
+<app-footer [language]="language()" />

@@ -1,0 +1,18 @@
+<a class="skip-link" href="#main-content">{{ language === 'es' ? 'Saltar al contenido' : 'Skip to content' }}</a>
+<header class="site-header">
+  <nav class="site-nav" [attr.aria-label]="language === 'es' ? 'Navegación principal' : 'Main navigation'">
+    <a class="brand" href="./" [attr.aria-label]="language === 'es' ? 'Daniel Santos // Portafolio' : 'Daniel Santos // Portfolio'">
+      <img class="brand-mark" src="daniel-santos.png" alt="" width="34" height="34">
+      <span class="brand-name">{{ language === 'es' ? 'Daniel Santos // Portafolio' : 'Daniel Santos // Portfolio' }}</span>
+    </a>
+    <div class="nav-links">
+      <a href="#tech">{{ language === 'es' ? 'Tecnologías' : 'Technologies' }}</a>
+      <a href="#projects">{{ language === 'es' ? 'Proyectos' : 'Projects' }}</a>
+      <a href="#contact">{{ language === 'es' ? 'Contacto' : 'Contact' }}</a>
+    </div>
+    <div class="language-switch" role="group" [attr.aria-label]="language === 'es' ? 'Idioma' : 'Language'">
+      <button type="button" lang="es" aria-label="Español" [attr.aria-pressed]="language === 'es'" (click)="switchLanguage('es')"><svg class="language-icon" viewBox="0 0 18 12" aria-hidden="true"><path fill="#b91c31" d="M0 0h18v12H0z"/><path fill="#ffc846" d="M0 3h18v6H0z"/><path fill="#b91c31" d="M4 4h2v4H4z"/></svg><span>ES</span></button>
+      <button type="button" lang="en" aria-label="English" [attr.aria-pressed]="language === 'en'" (click)="switchLanguage('en')"><svg class="language-icon" viewBox="0 0 18 12" aria-hidden="true"><path fill="#22376f" d="M0 0h18v12H0z"/><path stroke="#fff" stroke-width="2.5" d="m0 0 18 12M18 0 0 12"/><path stroke="#c72a43" stroke-width="1" d="m0 0 18 12M18 0 0 12"/><path stroke="#fff" stroke-width="4" d="M9 0v12M0 6h18"/><path stroke="#c72a43" stroke-width="2" d="M9 0v12M0 6h18"/></svg><span>EN</span></button>
+    </div>
+  </nav>
+</header>

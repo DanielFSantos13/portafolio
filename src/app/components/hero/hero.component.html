@@ -1,0 +1,16 @@
+<section id="inicio" class="profile" aria-labelledby="profile-title">
+  <img class="profile-photo" src="daniel-santos.png" width="96" height="96" alt="Daniel Santos" fetchpriority="high">
+  <div class="profile-content">
+    <h1 id="profile-title">Daniel Santos</h1>
+    <p class="profile-role">{{ language === 'es' ? 'Ingeniero de software · Desarrollador frontend' : 'Software engineer · Frontend developer' }}</p>
+    <p class="profile-intro">{{ language === 'es'
+      ? 'Desarrollo interfaces responsivas con Angular, TypeScript y JavaScript. Aplico principios de UX/UI para convertir prototipos web en componentes reutilizables. Integro APIs REST para conectar las aplicaciones con sus servicios.'
+      : 'I build responsive interfaces with Angular, TypeScript, and JavaScript. I apply UX/UI principles to turn web prototypes into reusable components. I integrate REST APIs to connect applications to their services.' }}</p>
+    <p class="profile-intro profile-secondary">{{ language === 'es'
+      ? 'Uso asistentes de IA para depurar, documentar y automatizar tareas, y reviso el código que generan.'
+      : 'I use AI assistants to debug, document, and automate tasks, and review the code they generate.' }}</p>
+    <div class="profile-actions">
+      <a class="button button-primary" href="#projects">{{ language === 'es' ? 'Ver proyectos' : 'View projects' }} <span aria-hidden="true">↓</span></a>
+    </div>
+  </div>
+</section>

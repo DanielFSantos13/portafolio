@@ -1,0 +1,8 @@
+/dist
+/node_modules
+/.angular
+/coverage
+.env
+.env.*
+!.env.example
+.DS_Store

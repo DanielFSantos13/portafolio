@@ -1,0 +1,35 @@
+<section id="projects" class="chapter projects-chapter" aria-labelledby="projects-title">
+  <div class="chapter-inner">
+    <h2 id="projects-title">{{ language === 'es' ? 'Proyectos' : 'Projects' }}</h2>
+    @for (project of projects; track project.url) {
+      <article class="project-window">
+        <div class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="window-address">{{ project.domain }}</span>
+          <span class="window-state">{{ language === 'es' ? 'Publicado' : 'Live' }}</span>
+        </div>
+        <div class="project-details">
+          <div class="project-copy">
+            <p class="project-role">{{ project.role[language] }}</p>
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description[language] }}</p>
+            <ul class="project-stack" role="list">
+              @for (technology of project.technologies; track technology) {
+                <li>
+                  <img [src]="'tech-icons/' + technology.toLowerCase() + '.svg'" alt="" width="14" height="14">
+                  {{ technology }}
+                </li>
+              }
+            </ul>
+            <a class="button button-glass" [href]="project.url" target="_blank" rel="noopener noreferrer">
+              {{ language === 'es' ? 'Visitar sitio' : 'Visit site' }} <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <img class="project-preview" [src]="project.preview"
+            [alt]="language === 'es' ? 'Captura de la página de inicio de Arsotek' : 'Screenshot of the Arsotek homepage'"
+            width="1248" height="705" loading="lazy" decoding="async">
+        </div>
+      </article>
+    }
+  </div>
+</section>
