@@ -30,6 +30,7 @@ export class TechStackComponent {
       title: { es: 'Backend y datos', en: 'Backend & data' },
       skills: [
         { name: 'APIs REST', icon: 'rest', englishName: 'REST APIs' },
+        { name: 'Node.js', icon: 'nodejs' },
         { name: 'Python', icon: 'python' },
         { name: 'MySQL', icon: 'mysql' },
         { name: 'C++', icon: 'cplusplus' }
@@ -41,8 +42,7 @@ export class TechStackComponent {
       skills: [
         { name: 'Git', icon: 'git' },
         { name: 'GitHub', icon: 'github' },
-        { name: 'AWS', icon: 'amazonwebservices' },
-        { name: 'Node.js', icon: 'nodejs' }
+        { name: 'AWS', icon: 'amazonwebservices' }
       ]
     },
     {
